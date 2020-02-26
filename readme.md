@@ -29,7 +29,7 @@
 
 `> pip install -r requirements.txt` 
 
-`> python passivehunter domainname.tld`
+`> python passivehunter.py domainname.tld`
 
 
 # Files :
@@ -44,6 +44,8 @@ When a scan is successfully completed , **3 files** are created
 
 
 # Example Usage : 
+python passivehunter.py hackerone.com
+
 ![Total Unique Subdomains Found](https://github.com/devanshbatham/Passivehunter/blob/master/Images/run1.PNG)
 ![Alive Subdomains](https://github.com/devanshbatham/Passivehunter/blob/master/Images/run2.PNG)
 # Credits : 
