@@ -27,7 +27,7 @@
 
 `> cd Passivehunter`
 
-`> pip install -r requirements.txt` 
+`> pip3 install -r requirements.txt` 
 
 `> python passivehunter.py domainname.tld`
 
