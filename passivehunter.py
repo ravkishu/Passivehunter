@@ -114,6 +114,6 @@ if __name__ == "__main__":
     #         urls = set(map(str.strip, infile))
     #     #calling make_requests function for making asynchronous requests 
     #     asyncio.run(make_requests( domain ,urls=urls)) # function imported from status_check.py
-    #    print("\u001b[0m")
-    else:
-        quit()
+    #     print("\u001b[0m")
+    # else:
+    #     quit()
