@@ -104,14 +104,16 @@ if __name__ == "__main__":
     error_handler(url) #function imported from error_handling.py 
     main(url , domain) 
     print("\u001b[0m")
-    print("\u001b[32;1m[!] Want to filter out the alive domains ? (Y/N)")
-    ch = input()
-    if ch.lower() == 'y' or ch.lower() == 'yes':
-        here = pathlib.Path(__file__).parent
-        with open(here.joinpath(domain+'.txt')) as infile:
-            urls = set(map(str.strip, infile))
-        #calling make_requests function for making asynchronous requests 
-        asyncio.run(make_requests( domain ,urls=urls)) # function imported from status_check.py
-        print("\u001b[0m")
+    
+    # Commenting this for automation purpose
+    # print("\u001b[32;1m[!] Want to filter out the alive domains ? (Y/N)")
+    # ch = input()
+    # if ch.lower() == 'y' or ch.lower() == 'yes':
+    #     here = pathlib.Path(__file__).parent
+    #     with open(here.joinpath(domain+'.txt')) as infile:
+    #         urls = set(map(str.strip, infile))
+    #     #calling make_requests function for making asynchronous requests 
+    #     asyncio.run(make_requests( domain ,urls=urls)) # function imported from status_check.py
+    #    print("\u001b[0m")
     else:
         quit()
